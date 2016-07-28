@@ -9,9 +9,8 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="70,136,0,0" TextWrapping="Wrap" Text="Prueba Github" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" FontSize="72"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="40,6,30,0" TextWrapping="Wrap" Text="Bienvenidos" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" FontSize="60" Width="330" Height="68"/>
         <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="125,405,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton1" Content="RadioButton" HorizontalAlignment="Left" Margin="125,519,0,0" VerticalAlignment="Top"/>
-
+        <RadioButton x:Name="radioButton1" Content="RadiMarco" HorizontalAlignment="Left" Margin="125,314,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Page>
