@@ -9,7 +9,13 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="40,6,30,0" TextWrapping="Wrap" Text="Bienvenidos" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" FontSize="60" Width="330" Height="68"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="40,6,30,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" FontSize="60" Width="330" Height="136">
+            <Run Text="Martin es "/>
+            <LineBreak/>
+            <Run Text="Puto"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
         <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="125,405,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButton1" Content="RadiMarco" HorizontalAlignment="Left" Margin="125,314,0,0" VerticalAlignment="Top"/>
     </Grid>
