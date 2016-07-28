@@ -8,15 +8,22 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="appAceptar" Icon="Accept" Label="Ingresar"/>
+            <AppBarButton x:Name="appCancelar" Icon="Cancel" Label="Cancelar"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="40,6,30,0" TextWrapping="Wrap" VerticalAlignment="Top" SelectionChanged="textBlock_SelectionChanged" FontSize="60" Width="330" Height="136">
-            <Run Text="Martin es "/>
-            <LineBreak/>
-            <Run Text="Puto"/>
-            <LineBreak/>
-            <Run/>
-        </TextBlock>
-        <RadioButton x:Name="radioButton" Content="RadioButton" HorizontalAlignment="Left" Margin="125,405,0,0" VerticalAlignment="Top"/>
-        <RadioButton x:Name="radioButton1" Content="RadiMarco" HorizontalAlignment="Left" Margin="125,314,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="6,67,4,0" TextWrapping="Wrap" Text="Bienvenidos" VerticalAlignment="Top" Height="63" Width="390" FontSize="60" TextAlignment="Center"/>
+        <TextBlock x:Name="textUno" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="Proyecto Final" VerticalAlignment="Top" Height="63" Width="390" FontSize="40" TextAlignment="Center"/>
+
+        <Grid HorizontalAlignment="Left" Height="274" Margin="10,204,0,0" VerticalAlignment="Top" Width="380">
+            <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Usuario:" VerticalAlignment="Top" FontSize="26"/>
+            <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="Contraseña:" VerticalAlignment="Top" FontSize="26"/>
+            <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Margin="10,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368" FontSize="26"/>
+        </Grid>
+        <PasswordBox x:Name="paBContraseña" HorizontalAlignment="Left" Margin="18,398,0,0" VerticalAlignment="Top" Width="372" FontSize="26"/>
     </Grid>
 </Page>
