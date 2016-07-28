@@ -44,5 +44,7 @@ namespace VentaPorRutaWindowsPhone
             // Si usa NavigationHelper, que se proporciona en algunas plantillas,
             // el evento se controla automáticamente.
         }
+
+  
     }
 }
