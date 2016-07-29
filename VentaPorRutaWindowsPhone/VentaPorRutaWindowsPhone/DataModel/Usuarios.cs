@@ -24,7 +24,6 @@ namespace VentaPorRutaWindowsPhone.DataModel
         }
 
         private string _Usuario;
-        [PrimaryKey, AutoIncrement]
         public string Usuario
         {
             get { return Usuario; }
@@ -36,7 +35,6 @@ namespace VentaPorRutaWindowsPhone.DataModel
         }
 
         private string _Contraseña;
-        [PrimaryKey, AutoIncrement]
         public string Contraseña
         {
             get { return Contraseña; }
