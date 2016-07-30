@@ -45,6 +45,9 @@ namespace VentaPorRutaWindowsPhone
             // el evento se controla automáticamente.
         }
 
-  
+        private void appAceptar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

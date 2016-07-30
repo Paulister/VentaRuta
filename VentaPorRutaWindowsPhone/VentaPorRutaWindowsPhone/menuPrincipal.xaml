@@ -7,8 +7,18 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Name="Contact" Label="Clientes" Icon="Contact" FontSize="14"/>
+            <AppBarButton x:Name="Ventas" FontSize="14" Icon="Globe" Label="Ventas"/>
+            <AppBarButton x:Name="Productos" FontSize="14" Icon="Attach" Label="Productos"/>
+            <AppBarButton x:Name="Sync" Label="Sincronizar" Icon="Sync" FontSize="14"/>
+        </CommandBar>
+    </Page.BottomAppBar>
 
     <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="6,67,4,0" TextWrapping="Wrap" Text="Ventas en Ruta" VerticalAlignment="Top" Height="63" Width="390" FontSize="50" TextAlignment="Center"/>
+        <TextBlock x:Name="textUno" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="MTW" VerticalAlignment="Top" Height="63" Width="390" FontSize="40" TextAlignment="Center"/>
 
     </Grid>
 </Page>
