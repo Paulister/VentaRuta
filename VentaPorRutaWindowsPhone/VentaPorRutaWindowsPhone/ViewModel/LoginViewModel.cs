@@ -11,12 +11,14 @@ namespace VentaPorRutaWindowsPhone.ViewModel
 {
     class LoginViewModel
     {
-        public async Task<Boolean> Login(string user, string pass)
+        public async Task<string> Login(string user, string pass)
         {
             HttpClient client = new HttpClient();
-            Uri dataUri = new Uri("http://localhost/WSRuta/VentsServices.svc/login/" + user + pass);
+            Uri dataUri = new Uri("http://localhost/WSRuta/VentasService.svc/login/" + user +","+ pass);
             string jsonText = await client.GetStringAsync(dataUri);
-            //Boolean valido = JsonConverter.Equals
+            string confirmado = JsonConvert.DeserializeObject<string>(jsonText);
+            return confirmado;
+
         } 
     }
 }
