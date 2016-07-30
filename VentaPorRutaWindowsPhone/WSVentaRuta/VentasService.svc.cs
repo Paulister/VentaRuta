@@ -12,22 +12,20 @@ namespace WSVentaRuta
     // NOTA: para iniciar el Cliente de prueba WCF para probar este servicio, seleccione VentasService.svc o VentasService.svc.cs en el Explorador de soluciones e inicie la depuración.
     public class VentasService : IVentasService
     {
-        public InicioSesion Login(string Usuario, string )
+        public Boolean Login(string Usuario, string Pass)
         {
-            using (VentasModelDataContext ctx = new VentasModelDataContext())
+            using (VentasModelDataContext db = new VentasModelDataContext())
             {
-                var usuario = (from d in ctx.Usuarios
-                            where d.Usuario == Usuario
-                            select d).FirstOrDefault();
-                if (usuario != null)
-                {
-                    InicioSesion Sesion = new InicioSesion();
-                    Sesion.Usuario = usuario.Usuario;
-                    Sesion.Password = usuario.Contraseña;
-                    return Sesion;
-
-                }
-                return null;
+                
+                    Usuarios us = db.Usuarios.FirstOrDefault(x => x.Usuario == Usuario);
+               if (us.Contraseña == Pass)
+                    {
+                        return true;
+                    }
+               else
+                    {
+                        return false;
+                    }
             }
 
 

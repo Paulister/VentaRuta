@@ -19,6 +19,6 @@ namespace WSVentaRuta
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
 
-        InicioSesion Login(string Usuario, string Pass);
+        Boolean Login(string Usuario, string Pass);
     }
 }
