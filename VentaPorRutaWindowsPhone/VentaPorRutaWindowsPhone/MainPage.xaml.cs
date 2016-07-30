@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -45,9 +46,21 @@ namespace VentaPorRutaWindowsPhone
             // el evento se controla automáticamente.
         }
 
-        private void appAceptar_Click(object sender, RoutedEventArgs e)
+        private async void appAceptar_Click(object sender, RoutedEventArgs e)
         {
+            ViewModel.LoginViewModel model = new ViewModel.LoginViewModel();
 
+            string resultado = await model.Login(txtUsuario.Text, txtContraseña.Text);
+
+            if(resultado == "true")
+            {
+                Frame.Navigate(typeof(menuPrincipal));
+            }
+            else
+            {
+                MessageDialog dg = new MessageDialog("Usuario no existe en la BD");
+                await dg.ShowAsync();
+            }
         }
     }
 }

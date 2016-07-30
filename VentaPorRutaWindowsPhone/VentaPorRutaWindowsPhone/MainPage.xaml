@@ -23,7 +23,7 @@
             <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,59,0,0" TextWrapping="Wrap" Text="Usuario:" VerticalAlignment="Top" FontSize="26"/>
             <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="10,160,0,0" TextWrapping="Wrap" Text="Contraseña:" VerticalAlignment="Top" FontSize="26"/>
             <TextBox x:Name="txtUsuario" HorizontalAlignment="Left" Margin="10,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368" FontSize="26"/>
+            <TextBox x:Name="txtContraseña" HorizontalAlignment="Left" Margin="10,196,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="368" FontSize="26"/>
         </Grid>
-        <PasswordBox x:Name="paBContraseña" HorizontalAlignment="Left" Margin="18,398,0,0" VerticalAlignment="Top" Width="372" FontSize="26"/>
     </Grid>
 </Page>
