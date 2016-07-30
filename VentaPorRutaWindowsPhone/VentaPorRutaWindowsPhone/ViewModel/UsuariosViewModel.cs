@@ -24,5 +24,7 @@ namespace VentaPorRutaWindowsPhone.ViewModel
             this.Usuarios = new ObservableCollection<DataModel.Usuarios>();
             DatosCargados = false;
         }
+
+        
     }
 }

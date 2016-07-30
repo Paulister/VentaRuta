@@ -35,5 +35,10 @@ namespace VentaPorRutaWindowsPhone
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void btnAppNuevo_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

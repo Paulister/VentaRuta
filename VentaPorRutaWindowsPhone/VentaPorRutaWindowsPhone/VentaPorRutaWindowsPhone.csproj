@@ -106,6 +106,7 @@
     <Compile Include="Ventas.xaml.cs">
       <DependentUpon>Ventas.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\UsuariosViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
