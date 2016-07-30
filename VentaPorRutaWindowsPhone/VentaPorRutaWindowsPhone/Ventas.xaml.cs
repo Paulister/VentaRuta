@@ -20,9 +20,9 @@ namespace VentaPorRutaWindowsPhone
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class menuPrincipal : Page
+    public sealed partial class Ventas : Page
     {
-        public menuPrincipal()
+        public Ventas()
         {
             this.InitializeComponent();
         }
@@ -34,21 +34,6 @@ namespace VentaPorRutaWindowsPhone
         /// Este parámetro se usa normalmente para configurar la página.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-        }
-
-        private void Contact_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Clientes));
-        }
-
-        private void Ventas_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Ventas));
-        }
-
-        private void Productos_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Productos));
         }
     }
 }

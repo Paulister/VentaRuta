@@ -9,9 +9,9 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="Contact" Label="Clientes" Icon="Contact" FontSize="14"/>
-            <AppBarButton x:Name="Ventas" FontSize="14" Icon="Globe" Label="Ventas"/>
-            <AppBarButton x:Name="Productos" FontSize="14" Icon="Attach" Label="Productos"/>
+            <AppBarButton x:Name="Contact" Label="Clientes" Icon="Contact" FontSize="14" Click="Contact_Click"/>
+            <AppBarButton x:Name="Ventas" FontSize="14" Icon="Globe" Label="Ventas" Click="Ventas_Click"/>
+            <AppBarButton x:Name="Productos" FontSize="14" Icon="Attach" Label="Productos" Click="Productos_Click"/>
             <AppBarButton x:Name="Sync" Label="Sincronizar" Icon="Sync" FontSize="14"/>
         </CommandBar>
     </Page.BottomAppBar>
@@ -19,7 +19,7 @@
     <Grid Margin="0,-16.667,0,-0.333">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="6,67,4,0" TextWrapping="Wrap" Text="Ventas en Ruta" VerticalAlignment="Top" Height="63" Width="390" FontSize="50" TextAlignment="Center"/>
         <TextBlock x:Name="textUno" HorizontalAlignment="Center" Margin="10,10,0,0" TextWrapping="Wrap" Text="MTW" VerticalAlignment="Top" Height="63" Width="390" FontSize="40" TextAlignment="Center"/>
-        <Image x:Name="image" HorizontalAlignment="Left" Height="361" Margin="24,163,0,0" VerticalAlignment="Top" Width="357" Source="Assets/logo.png" Stretch="None"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="219" Margin="87,221,0,0" VerticalAlignment="Top" Width="226" Source="Assets/proyecto icono.jpg" Stretch="None"/>
 
     </Grid>
 </Page>
