@@ -14,7 +14,7 @@ namespace VentaPorRutaWindowsPhone.ViewModel
         public async Task<string> Login(string user, string pass)
         {
             HttpClient client = new HttpClient();
-            Uri dataUri = new Uri("http://localhost/WSRuta/VentasService.svc/login/" + user +","+ pass);
+            Uri dataUri = new Uri("http://localhost/WSRuta/VentasService.svc/login/" + user +"/"+ pass);
             string jsonText = await client.GetStringAsync(dataUri);
             string confirmado = JsonConvert.DeserializeObject<string>(jsonText);
             return confirmado;

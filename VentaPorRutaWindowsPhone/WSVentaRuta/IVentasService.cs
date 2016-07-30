@@ -14,7 +14,7 @@ namespace WSVentaRuta
     public interface IVentasService
     {
         [OperationContract]
-        [WebInvoke(UriTemplate = "Login/{Usuario},{Pass}",
+        [WebInvoke(UriTemplate = "Login/{Usuario}/{Pass}",
             Method = "GET",
             RequestFormat = WebMessageFormat.Json,
             ResponseFormat = WebMessageFormat.Json)]
