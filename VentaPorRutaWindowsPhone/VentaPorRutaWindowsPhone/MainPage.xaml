@@ -10,7 +10,7 @@
 
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Name="appAceptar" Icon="Accept" Label="Ingresar"/>
+            <AppBarButton x:Name="appAceptar" Icon="Accept" Label="Ingresar" Click="appAceptar_Click"/>
             <AppBarButton x:Name="appCancelar" Icon="Cancel" Label="Cancelar"/>
         </CommandBar>
     </Page.BottomAppBar>

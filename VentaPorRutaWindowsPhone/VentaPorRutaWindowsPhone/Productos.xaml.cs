@@ -13,20 +13,18 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// La plantilla de elemento Página en blanco está documentada en http://go.microsoft.com/fwlink/?LinkId=391641
+// La plantilla de elemento Página en blanco está documentada en http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace VentaPorRutaWindowsPhone
 {
     /// <summary>
     /// Página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class Productos : Page
     {
-        public MainPage()
+        public Productos()
         {
             this.InitializeComponent();
-
-            this.NavigationCacheMode = NavigationCacheMode.Required;
         }
 
         /// <summary>
@@ -36,18 +34,6 @@ namespace VentaPorRutaWindowsPhone
         /// Este parámetro se usa normalmente para configurar la página.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            // TODO: Preparar la página que se va a mostrar aquí.
-
-            // TODO: Si la aplicación contiene varias páginas, asegúrese de
-            // controlar el botón para retroceder del hardware registrándose en el
-            // evento Windows.Phone.UI.Input.HardwareButtons.BackPressed.
-            // Si usa NavigationHelper, que se proporciona en algunas plantillas,
-            // el evento se controla automáticamente.
-        }
-
-        private void appAceptar_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
