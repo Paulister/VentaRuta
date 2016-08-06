@@ -9,6 +9,7 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
     <Page.BottomAppBar>
         <CommandBar>
+            
             <AppBarButton x:Name="Contact" Label="Clientes" Icon="Contact" FontSize="14" Click="Contact_Click"/>
             <AppBarButton x:Name="Ventas" FontSize="14" Icon="Globe" Label="Ventas" Click="Ventas_Click"/>
             <AppBarButton x:Name="Productos" FontSize="14" Icon="Attach" Label="Productos" Click="Productos_Click"/>
